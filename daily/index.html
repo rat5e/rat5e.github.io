@@ -2,83 +2,69 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>日常碎碎念 | rat5e的小窝</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        /* 全局样式 */
         body {
-            font-family: sans-serif;
-            /* 背景图路径：直接用你上传的图片，名字如果不一样改一下即可 */
-            background-image: url("./微信图片_20260412182254.jpg");
-            background-color: #fdf2f8;
-            background-size: cover; /* 铺满屏幕 */
-            background-attachment: fixed; /* 滚动背景不动 */
-            background-position: center;
+            background-image: url("../cute.jpg");
+            background-size: cover;
             background-repeat: no-repeat;
-            padding: 20px 0 30px 0;
+            background-attachment: fixed;
+            font-family: "微软雅黑", sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        .sweet-nav {
+
+        /* 导航栏样式 */
+        .nav-bar {
             text-align: center;
-            padding: 0 10px 20px 10px;
+            padding: 15px 0;
         }
-        .sweet-nav a {
-            background: #ff9e9e;
-            color: white;
-            padding: 8px 15px;
-            margin: 0 5px 10px 5px;
+        .nav-btn {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 6px 12px;
+            margin: 0 5px;
             border-radius: 20px;
             text-decoration: none;
-            display: inline-block;
-            font-weight: bold;
+            color: inherit;
             font-size: 14px;
         }
-        .sweet-nav a:hover { background: #ff6b6b; }
-        .daily-container {
-            max-width: 700px;
-            width: 90%;
-            margin: 0 auto;
-        }
+
+        /* 日记卡片样式 */
         .diary-card {
-            background: rgba(255,255,255,0.9);
-            border: 2px solid #ffc8dd;
+            background: rgba(255, 255, 255, 0.8);
             border-radius: 15px;
             padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 3px 10px rgba(255,199,221,0.5);
+            margin: 20px auto;
+            max-width: 600px;
         }
         .diary-date {
-            color: #ff8fab;
+            color: #ff6699;
             font-weight: bold;
-            font-size: 16px;
-            margin-bottom: 10px;
-            border-left: 4px solid #ffc8dd;
-            padding-left: 8px;
-        }
-        .diary-card p {
-            color: #666;
-            line-height: 1.8;
-            font-size: 15px;
         }
     </style>
 </head>
 <body>
-    <div class="sweet-nav">
-        < a href=" "> 主页</ a>
-        < a href="./"> 日常</ a>
-        < a href="../favorites/">⭐ 收藏</ a>
-        < a href="../handmade/">️ 手作</ a>
-        < a href="../guestbook/">💬 留言</ a>
+    <!-- 日常页面导航栏 -->
+    <div class="nav-bar">
+        <a href=" " class="nav-btn">主页</ a>
+        <div class="nav-btn" style="background-color: #66cc99; color: white;">日常</div>
+        <a href="https://rat5e.github.io/favorites/" class="nav-btn">收藏</a>
+        <a href="https://rat5e.github.io/handmade/" class="nav-btn">手作</a>
+        <a href="https://rat5e.github.io/guestbook/" class="nav-btn">留言</a>
     </div>
 
-    <div class="daily-container">
-        <div class="diary-card">
-            <div class="diary-date">2026.04.13 </div>
-            <p>终于把超可爱的三丽鸥背景换上啦！粉粉的超治愈，以后就在这里记录我的烘焙日常、手作进度和各种碎碎念～</p >
-        </div>
-        <div class="diary-card">
-            <div class="diary-date">2026.04.12 </div>
-            <p>试做了蔓越莓欧包，外皮有点硬，但内里软软的超好吃！下次准备加芝士馅，肯定更美味～</p >
-        </div>
+    <!-- 日记内容 -->
+    <div class="diary-card">
+        <div class="diary-date">2026.04.13</div>
+        <p>终于把超可爱的三丽鸥背景换上啦！粉粉的超治愈，以后就在这里记录我的烘焙日常、手作进度和各种碎碎念～</p >
+    </div>
+
+    <div class="diary-card">
+        <div class="diary-date">2026.04.12</div>
+        <p>试做了蔓越莓欧包，外皮有点硬，但内里软软的超好吃！下次准备加芝士馅，肯定更美味～</p >
     </div>
 </body>
 </html>
